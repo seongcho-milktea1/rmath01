@@ -1,4 +1,4 @@
-# 수와터연산 {#number-calc}
+# 수와 연산 {#number-calc}
 
 정수 (integer)와 유리수 (rational number)의 뜻에 대하여 살펴보고 정수와 유리수의 대소관계 및 연산에 대하여 알아봅니다.
 
