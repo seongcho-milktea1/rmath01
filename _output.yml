@@ -6,7 +6,7 @@ bookdown::gitbook:
       collapse: subsection
       scroll_highlight: yes
       before: <li><a href="./">[데이터과학] R로 배우는 중등 수학 1</a></li>
-      after:  <li><a href="http://xxx.rbind.io/" target="blank">[데이터과학] R로 배우는 중등 수학 1</a></li>
+      after:  <li><a href="https://seongcho-milktea1.github.io/rmath01/" target="blank">[데이터과학] R로 배우는 중등 수학 1</a></li>
     toolbar:
       position: fixed
     edit: null
