@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>References | 데이터과학: R로 배우는 중등 수학 1</title>
+  <meta name="description" content="References | 데이터과학: R로 배우는 중등 수학 1" />
+  <meta name="generator" content="bookdown 0.19 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="References | 데이터과학: R로 배우는 중등 수학 1" />
+  <meta property="og:type" content="book" />
+  
+  
+  
+  <meta name="github-repo" content="milktea13/rmath01_cookbook" />
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="References | 데이터과학: R로 배우는 중등 수학 1" />
+  
+  
+  
+
+<meta name="author" content="글: 성조 (seongcho), 표지 그림: 밀크티3 (milktea3)" />
+
+
+<meta name="date" content="2020-11-16" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="eof.html"/>
+
+<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+
+<script src="libs/kePrint-0.0.1/kePrint.js"></script>
+
+
+<style type="text/css">
+a.sourceLine { display: inline-block; line-height: 1.25; }
+a.sourceLine { pointer-events: none; color: inherit; text-decoration: inherit; }
+a.sourceLine:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode { white-space: pre; position: relative; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+code.sourceCode { white-space: pre-wrap; }
+a.sourceLine { text-indent: -1em; padding-left: 1em; }
+}
+pre.numberSource a.sourceLine
+  { position: relative; left: -4em; }
+pre.numberSource a.sourceLine::before
+  { content: attr(data-line-number);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; pointer-events: all; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {  }
+@media screen {
+a.sourceLine::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+</style>
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="./">[데이터과학] R로 배우는 중등 수학 1</a></li>
+<li class="divider"></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>시작하기에 앞서</a><ul>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#지은이-소개"><i class="fa fa-check"></i>지은이 소개</a></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#이-책의-구성"><i class="fa fa-check"></i>이 책의 구성</a></li>
+</ul></li>
+<li class="chapter" data-level="1" data-path="r-get-started.html"><a href="r-get-started.html"><i class="fa fa-check"></i><b>1</b> R 시작하기</a><ul>
+<li class="chapter" data-level="1.1" data-path="r-get-started.html"><a href="r-get-started.html#왜-r인가"><i class="fa fa-check"></i><b>1.1</b> 왜 R인가?</a></li>
+<li class="chapter" data-level="1.2" data-path="r-get-started.html"><a href="r-get-started.html#r과-rstudio-설치하기"><i class="fa fa-check"></i><b>1.2</b> R과 RStudio 설치하기</a></li>
+<li class="chapter" data-level="1.3" data-path="r-get-started.html"><a href="r-get-started.html#r로-소스코드-작성하기"><i class="fa fa-check"></i><b>1.3</b> R로 소스코드 작성하기</a><ul>
+<li class="chapter" data-level="1.3.1" data-path="r-get-started.html"><a href="r-get-started.html#벡터-vector"><i class="fa fa-check"></i><b>1.3.1</b> 벡터 (vector)</a></li>
+<li class="chapter" data-level="1.3.2" data-path="r-get-started.html"><a href="r-get-started.html#데이터-프레임-data-frame-df-data.frame"><i class="fa fa-check"></i><b>1.3.2</b> 데이터 프레임 (data frame, df, <code>data.frame</code>)</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="2" data-path="number-calc.html"><a href="number-calc.html"><i class="fa fa-check"></i><b>2</b> 수와터연산</a><ul>
+<li class="chapter" data-level="2.1" data-path="number-calc.html"><a href="number-calc.html#prime-factor"><i class="fa fa-check"></i><b>2.1</b> 소인수분해 (prime factorization)</a><ul>
+<li class="chapter" data-level="2.1.1" data-path="number-calc.html"><a href="number-calc.html#합성수의-소인수분해"><i class="fa fa-check"></i><b>2.1.1</b> 합성수의 소인수분해</a></li>
+<li class="chapter" data-level="2.1.2" data-path="number-calc.html"><a href="number-calc.html#Eratosthenes"><i class="fa fa-check"></i><b>2.1.2</b> 에라토스테네스의 체</a></li>
+<li class="chapter" data-level="2.1.3" data-path="number-calc.html"><a href="number-calc.html#나만의-소인수분해-함수-myfactorize-만들기"><i class="fa fa-check"></i><b>2.1.3</b> 나만의 소인수분해 함수 <code>myFactorize()</code> 만들기</a></li>
+<li class="chapter" data-level="2.1.4" data-path="number-calc.html"><a href="number-calc.html#gcd-lcm"><i class="fa fa-check"></i><b>2.1.4</b> 최대공약수와 최소공배수</a></li>
+</ul></li>
+<li class="chapter" data-level="2.2" data-path="number-calc.html"><a href="number-calc.html#정수와-유리수"><i class="fa fa-check"></i><b>2.2</b> 정수와 유리수</a><ul>
+<li class="chapter" data-level="2.2.1" data-path="number-calc.html"><a href="number-calc.html#integer-rational-compare"><i class="fa fa-check"></i><b>2.2.1</b> 정수와 유리수의 뜻과 대소 관계</a></li>
+<li class="chapter" data-level="2.2.2" data-path="number-calc.html"><a href="number-calc.html#자연수-정수-유리수의-관계-시각화"><i class="fa fa-check"></i><b>2.2.2</b> 자연수, 정수, 유리수의 관계 시각화</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="x-equation.html"><a href="x-equation.html"><i class="fa fa-check"></i><b>3</b> 문자와 식</a><ul>
+<li class="chapter" data-level="3.1" data-path="x-equation.html"><a href="x-equation.html#var-equation"><i class="fa fa-check"></i><b>3.1</b> 문자의 사용과 식의 계산</a></li>
+<li class="chapter" data-level="3.2" data-path="x-equation.html"><a href="x-equation.html#일차식과-일차방정식"><i class="fa fa-check"></i><b>3.2</b> 일차식과 일차방정식</a></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="coordinates-graph.html"><a href="coordinates-graph.html"><i class="fa fa-check"></i><b>4</b> 좌표평면과 그래프</a><ul>
+<li class="chapter" data-level="4.1" data-path="coordinates-graph.html"><a href="coordinates-graph.html#pair-coordinates"><i class="fa fa-check"></i><b>4.1</b> 순서쌍과 좌표</a></li>
+<li class="chapter" data-level="4.2" data-path="coordinates-graph.html"><a href="coordinates-graph.html#그래프"><i class="fa fa-check"></i><b>4.2</b> 그래프</a></li>
+<li class="chapter" data-level="4.3" data-path="coordinates-graph.html"><a href="coordinates-graph.html#정비례와-반비례"><i class="fa fa-check"></i><b>4.3</b> 정비례와 반비례</a></li>
+</ul></li>
+<li class="chapter" data-level="5" data-path="features-dimensions.html"><a href="features-dimensions.html"><i class="fa fa-check"></i><b>5</b> 도형의 기초</a><ul>
+<li class="chapter" data-level="5.1" data-path="features-dimensions.html"><a href="features-dimensions.html#기본-도형"><i class="fa fa-check"></i><b>5.1</b> 기본 도형</a><ul>
+<li class="chapter" data-level="5.1.1" data-path="features-dimensions.html"><a href="features-dimensions.html#point-line-area"><i class="fa fa-check"></i><b>5.1.1</b> 점, 선, 면</a></li>
+<li class="chapter" data-level="5.1.2" data-path="features-dimensions.html"><a href="features-dimensions.html#angle-characteristics"><i class="fa fa-check"></i><b>5.1.2</b> 각의 성질</a></li>
+<li class="chapter" data-level="5.1.3" data-path="features-dimensions.html"><a href="features-dimensions.html#점-직선-평면의-위치-관계"><i class="fa fa-check"></i><b>5.1.3</b> 점, 직선, 평면의 위치 관계</a></li>
+<li class="chapter" data-level="5.1.4" data-path="features-dimensions.html"><a href="features-dimensions.html#parallel-characteristics"><i class="fa fa-check"></i><b>5.1.4</b> 평행선의 성질</a></li>
+</ul></li>
+<li class="chapter" data-level="5.2" data-path="features-dimensions.html"><a href="features-dimensions.html#작도와-합동"><i class="fa fa-check"></i><b>5.2</b> 작도와 합동</a><ul>
+<li class="chapter" data-level="5.2.1" data-path="features-dimensions.html"><a href="features-dimensions.html#간단한-도형의-작도"><i class="fa fa-check"></i><b>5.2.1</b> 간단한 도형의 작도</a></li>
+<li class="chapter" data-level="5.2.2" data-path="features-dimensions.html"><a href="features-dimensions.html#삼각형의-작도"><i class="fa fa-check"></i><b>5.2.2</b> 삼각형의 작도</a></li>
+<li class="chapter" data-level="5.2.3" data-path="features-dimensions.html"><a href="features-dimensions.html#삼각형의-합동-조건"><i class="fa fa-check"></i><b>5.2.3</b> 삼각형의 합동 조건</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="6" data-path="features-characteristics.html"><a href="features-characteristics.html"><i class="fa fa-check"></i><b>6</b> 도형의 성질</a><ul>
+<li class="chapter" data-level="6.1" data-path="features-characteristics.html"><a href="features-characteristics.html#평면도형의-성질"><i class="fa fa-check"></i><b>6.1</b> 평면도형의 성질</a><ul>
+<li class="chapter" data-level="6.1.1" data-path="features-characteristics.html"><a href="features-characteristics.html#다각형의-대각선"><i class="fa fa-check"></i><b>6.1.1</b> 다각형의 대각선</a></li>
+<li class="chapter" data-level="6.1.2" data-path="features-characteristics.html"><a href="features-characteristics.html#다각형의-내각과-외각"><i class="fa fa-check"></i><b>6.1.2</b> 다각형의 내각과 외각</a></li>
+<li class="chapter" data-level="6.1.3" data-path="features-characteristics.html"><a href="features-characteristics.html#원과-부채꼴"><i class="fa fa-check"></i><b>6.1.3</b> 원과 부채꼴</a></li>
+<li class="chapter" data-level="6.1.4" data-path="features-characteristics.html"><a href="features-characteristics.html#부채꼴의-넓이와-호의-길이"><i class="fa fa-check"></i><b>6.1.4</b> 부채꼴의 넓이와 호의 길이</a></li>
+</ul></li>
+<li class="chapter" data-level="6.2" data-path="features-characteristics.html"><a href="features-characteristics.html#입체도형의-성질"><i class="fa fa-check"></i><b>6.2</b> 입체도형의 성질</a><ul>
+<li class="chapter" data-level="6.2.1" data-path="features-characteristics.html"><a href="features-characteristics.html#다면체와-회전체"><i class="fa fa-check"></i><b>6.2.1</b> 다면체와 회전체</a></li>
+<li class="chapter" data-level="6.2.2" data-path="features-characteristics.html"><a href="features-characteristics.html#기둥의-겉넓이와-부피"><i class="fa fa-check"></i><b>6.2.2</b> 기둥의 겉넓이와 부피</a></li>
+<li class="chapter" data-level="6.2.3" data-path="features-characteristics.html"><a href="features-characteristics.html#뿔의-겉넓이와-부피"><i class="fa fa-check"></i><b>6.2.3</b> 뿔의 겉넓이와 부피</a></li>
+<li class="chapter" data-level="6.2.4" data-path="features-characteristics.html"><a href="features-characteristics.html#구의-겉넓이와-부피"><i class="fa fa-check"></i><b>6.2.4</b> 구의 겉넓이와 부피</a></li>
+<li class="chapter" data-level="6.2.5" data-path="features-characteristics.html"><a href="features-characteristics.html#그리고-공간"><i class="fa fa-check"></i><b>6.2.5</b> 그리고, 공간</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="7" data-path="statistics.html"><a href="statistics.html"><i class="fa fa-check"></i><b>7</b> 통계</a><ul>
+<li class="chapter" data-level="7.1" data-path="statistics.html"><a href="statistics.html#대푯값과-그림-상자"><i class="fa fa-check"></i><b>7.1</b> 대푯값과 그림 상자</a></li>
+<li class="chapter" data-level="7.2" data-path="statistics.html"><a href="statistics.html#줄기와-잎-그림과-도수분포표"><i class="fa fa-check"></i><b>7.2</b> 줄기와 잎 그림과 도수분포표</a></li>
+<li class="chapter" data-level="7.3" data-path="statistics.html"><a href="statistics.html#히스토그램과-도수분포다각형"><i class="fa fa-check"></i><b>7.3</b> 히스토그램과 도수분포다각형</a></li>
+<li class="chapter" data-level="7.4" data-path="statistics.html"><a href="statistics.html#상대도수"><i class="fa fa-check"></i><b>7.4</b> 상대도수</a></li>
+<li class="chapter" data-level="7.5" data-path="statistics.html"><a href="statistics.html#데이터-분석-심화---머신-러닝"><i class="fa fa-check"></i><b>7.5</b> 데이터 분석 심화 - 머신 러닝</a><ul>
+<li class="chapter" data-level="7.5.1" data-path="statistics.html"><a href="statistics.html#데이터-전처리"><i class="fa fa-check"></i><b>7.5.1</b> 데이터 전처리</a></li>
+<li class="chapter" data-level="7.5.2" data-path="statistics.html"><a href="statistics.html#훈련-데이터셋과-테스트-데이터셋"><i class="fa fa-check"></i><b>7.5.2</b> 훈련 데이터셋과 테스트 데이터셋</a></li>
+<li class="chapter" data-level="7.5.3" data-path="statistics.html"><a href="statistics.html#데이터-탐색"><i class="fa fa-check"></i><b>7.5.3</b> 데이터 탐색</a></li>
+<li class="chapter" data-level="7.5.4" data-path="statistics.html"><a href="statistics.html#데이터-시각화"><i class="fa fa-check"></i><b>7.5.4</b> 데이터 시각화</a></li>
+<li class="chapter" data-level="7.5.5" data-path="statistics.html"><a href="statistics.html#알고리즘모델-생성-및-평가"><i class="fa fa-check"></i><b>7.5.5</b> 알고리즘/모델 생성 및 평가</a></li>
+<li class="chapter" data-level="7.5.6" data-path="statistics.html"><a href="statistics.html#알고리즘모델-검증"><i class="fa fa-check"></i><b>7.5.6</b> 알고리즘/모델 검증</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="8" data-path="eof.html"><a href="eof.html"><i class="fa fa-check"></i><b>8</b> 끝 맺으며</a></li>
+<li class="chapter" data-level="" data-path="references.html"><a href="references.html"><i class="fa fa-check"></i>References</a></li>
+<li class="divider"></li>
+<li><a href="http://xxx.rbind.io/" target="blank">[데이터과학] R로 배우는 중등 수학 1</a></li>
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">데이터과학: R로 배우는 중등 수학 1</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="references" class="section level1 unnumbered">
+<h1>References</h1>
+
+</div>
+
+
+
+
+
+
+
+
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="eof.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": null,
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": null,
+"toc": {
+"collapse": "subsection",
+"scroll_highlight": true
+},
+"toolbar": {
+"position": "fixed"
+},
+"search": true,
+"info": true,
+"split_bib": false
+});
+});
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    var src = "true";
+    if (src === "" || src === "true") src = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:")
+      if (/^https?:/.test(src))
+        src = src.replace(/^https?:/, '');
+    script.src = src;
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+</body>
+
+</html>
