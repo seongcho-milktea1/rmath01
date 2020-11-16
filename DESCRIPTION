@@ -1,6 +1,5 @@
-Package: placeholder
-Type: Book
-Title: 데이터과학: R로 배우는 중등 수학 1
-Version: 0.0.1
+Package: rmath01
+Title: 데이터과학: R로 배우는 중등수학 1
+Version: Nov 2020
 Imports: bookdown
 Remotes: rstudio/bookdown
