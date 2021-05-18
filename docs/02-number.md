@@ -113,10 +113,10 @@ x2                     #x2 벡터값 확인
 x <- c(1:5)            #벡터 x의 값을 1부터 5까지의 숫자값으로 변경 (갱신, 업데이트)  
 length(x)              #x 벡터의 길이 (벡터안에 저장된 값의 개수) 확인
 
-#1,2,3,4,5 다섯 숫자 중 다섯 번째 값만 가져옴
+#1,2,3,4,5 다섯 숫자 중 다섯 번째 값만 가져옴 (아래줄 소스코드에 대한 설명)
 x[5]
 
-#1,2,3,4,5 다섯 숫자 중 첫 번째와 다섯 번째 값만 가져옴
+#1,2,3,4,5 다섯 숫자 중 첫 번째와 다섯 번째 값만 가져옴 (아래줄 소스코드에 대한 설명)
 x[c(1, 5)]  
 x[c(TRUE, FALSE, FALSE, FALSE, TRUE)]  
 
@@ -175,8 +175,8 @@ n                          #n 벡터 값 확인
 코드가 훨씬 간결해 졌고 이해하기도 쉬어졌습니다. 벡터는 여러 개의 값이 연속되어 저장되어 있는 $1$차원 자료 형태이기 때문에 기본적으로 값들의 집합입니다. 따라서 위와 같이 두 벡터들 간의 연산 (집합 연산, set operation)이 가능합니다 (그림 \@ref(fig:two-vectors-setdiff)). 
 
 <div class="figure" style="text-align: center">
-<img src="images/0202_two-vectors-setdiff.svg" alt="두 집합간 차이 (차집합) &lt;font size=&quot;2&quot;&gt;(출처 &lt;https://en.wikipedia.org/wiki/Set_(mathematics)#Basic_operations&gt;)&lt;/font&gt;" width="30%" />
-<p class="caption">(\#fig:two-vectors-setdiff)두 집합간 차이 (차집합) <font size="2">(출처 <https://en.wikipedia.org/wiki/Set_(mathematics)#Basic_operations>)</font></p>
+<img src="images/0202_two-vectors-setdiff.svg" alt="두 집합간 차이 (차집합) &lt;font size=&quot;2&quot;&gt;(출처 &lt;https://https://en.wikipedia.org/wiki/Set_(mathematics)#Basic_operations&gt;)&lt;/font&gt;" width="30%" />
+<p class="caption">(\#fig:two-vectors-setdiff)두 집합간 차이 (차집합) <font size="2">(출처 <https://https://en.wikipedia.org/wiki/Set_(mathematics)#Basic_operations>)</font></p>
 </div>
 
 위의 그림은 두 집합 간의 차이를 나타낸 것으로 왼쪽 집합 중 오른쪽 집합과 중복되는 부분을 제외하고 남은 부분의 집합입니다. 이를 차집합이라고 하고, R에서는 ```setdiff```함수를 이용하여 차집합을 구할 수 있습니다. 특정 함수에 대해 좀 더 자세히 알고 싶은 경우 함수 이름 앞에 ```?```를 붙여서 콘솔창에 입력하면 해당 함수의 도움말을 볼 수 있습니다 . 
@@ -216,10 +216,9 @@ i <- 1
 p <- n[i]
 #### '에라토스테네스의 체' 로직 시작 ################
   if (p*2 <= x) {           #if (현재 소수 p의 배수가 입력값 자연수 x보다 작거나 같으면)
-    composite <- seq(p*2, x, p)  # { 배수 벡터 생성 }
+    composite <- seq(p*2, x, p)  # { 소수가 아닌 숫자 벡터 생성 }
   } else composite <- c()        #else (아니면) { 배수 벡터 값을 빈값 (NULL)으로 설정 }
-  ##자연수 벡터 n에서 소수가 아닌 숫자 벡터 composite를 제외한 값을 n에 다시 저장
-  n <- setdiff(n, composite)    
+  n <- setdiff(n, composite)     #소수가 아닌 숫자 벡터를 제외한 자연수 벡터  
 #### '에라토스테네스의 체' 로직 종료 ################
 length(n)
 ```
@@ -251,7 +250,7 @@ n[2]     #다음 작업을 위해 남은 자연수 중 두 번째 소수값 확�
 i <- 2
 p <- n[i]
 #### '에라토스테네스의 체' 로직 시작 ################
- 2단계에서 이미 구현한 '에라토스테네스의 체' 로직 부분 코드 5줄을 복사해서 여기에 붙여 넣으세요.
+ 2단계에서 이미 구현한 '에라토스테네스의 체' 로직 부분 코드 4줄을 복사해서 여기에 붙여 넣으세요.
 #### '에라토스테네스의 체' 로직 종료 ################
 length(n)
 head(n)
@@ -264,7 +263,7 @@ n[3]
 i <- 3
 p <- n[i]
 #### '에라토스테네스의 체' 로직 시작 ################
- 위에서 이미 구현한 '에라토스테네스의 체' 로직 부분 코드를 복사해서 여기에 붙여 넣으세요. 
+ 위에서 이미 구현한 '에라토스테네스의 체' 로직 부분 코드를 복사해서 붙여 넣으세요. 
 #### '에라토스테네스의 체' 로직 종료 ################
 length(n)
 head(n)
@@ -277,7 +276,7 @@ n[4]
 i <- 4
 p <- n[i]
 #### '에라토스테네스의 체' 로직 시작 ################
- 위에서 이미 구현한 '에라토스테네스의 체' 로직 부분 코드를 복사해서 여기에 붙여 넣으세요. 
+ 위에서 이미 구현한 '에라토스테네스의 체' 로직 부분 코드를 복사해서 붙여 넣으세요. 
 #### '에라토스테네스의 체' 로직 종료 ################
 length(n)
 head(n)
@@ -307,7 +306,7 @@ p <- n[i]
 
 ```r
 #### '에라토스테네스의 체' 로직 시작 ################
- 위에서 이미 구현한 '에라토스테네스의 체' 로직 부분 코드를 복사해서 여기에 붙여 넣으세요. 
+ 위에서 이미 구현한 '에라토스테네스의 체' 로직 부분 코드를 복사해서 붙여 넣으세요. 
 #### '에라토스테네스의 체' 로직 종료 ################
 i <- i+1   #다음번째 i값 설정
 p <- n[i]  #다음번째 p값 설정
@@ -373,10 +372,9 @@ x <- 100
   for (i in c(1:4)) {
     p <- n[i]
     if (p*2 <= x) {           #if 현재 소수의 배수가 입력값 자연수보다 작거나 같으면
-      composite <- seq(p*2, x, p)    #소수가 아닌 배수 벡터 생성
-    } else composite <- c()   #else 아니면 배수 벡터 값을 빈값 (NULL)으로 설정 
-    #자연수 벡터 n에서 소수가 아닌 숫자 벡터 composite를 제외한 값을 n에 다시 저장
-    n <- setdiff(n, composite)    
+      composite <- seq(p*2, x, p)    #소수가 아닌 숫자 벡터 생성
+    } else composite <- c()        #else 아니면 배수 벡터 값을 빈값 (NULL)으로 설정 
+    n <- setdiff(n, composite)     #자연수 벡터 갱신
   }
 #### '에라토스테네스의 체' for() 로직 종료 ################ 
 #### 결과 확인
@@ -483,7 +481,7 @@ primeNumbers <- function(x) {
     return (NULL)     #빈 값(NULL)을 반환하고 함수 종료   
   }
 #### '에라토스테네스의 체' while() 로직 시작 ################
- 위에서 이미 구현한 '에라토스테네스의 체' while() 로직 부분 코드를 복사해서 여기에 붙여 넣으세요.
+ 위에서 이미 구현한 '에라토스테네스의 체' while() 로직 부분 코드를 복사해서 붙여넣으세요.
 #### '에라토스테네스의 체' while() 로직 종료 ################ 
   return(n)
 }
@@ -1023,8 +1021,8 @@ plt + layer(sp.polygons(korea_sp, col="grey40", alpha=0.5))
 ```%>%```연산자와 ```+```연산자로 대표되는 ```dplyr ``` 패키지와 ```ggplot2``` 패키지는 R 사용자들에게 있어서는 없어서는 안될 중요한 패키지들 입니다. 이 두 가지 패키지와 데이터 읽어오기, 변환하기, 반복문 수행하기, 모델 만들기 등에 필요한 여러 패키지들을 모아놓은 ```tidyverse```패키지를 설치하면 데이터 처리 및 분석의 여러 단계에서 필요한 필수 패키지들을 한번에 설치할 수 있습니다 (그림 \@ref(fig:tidyverse)). 
 
 <div class="figure" style="text-align: center">
-<img src="images/0206_tidyverse.png" alt="tidyverse 패키지 &lt;font size=&quot;2&quot;&gt;(출처 &lt;https://www.tidyverse.org&gt;)&lt;/font&gt;" width="50%" />
-<p class="caption">(\#fig:tidyverse)tidyverse 패키지 <font size="2">(출처 <https://www.tidyverse.org>)</font></p>
+<img src="images/0206_tidyverse.png" alt="dplyr와 ggplot2를 포함하는 tidyverse 패키지 &lt;font size=&quot;2&quot;&gt;(출처 &lt;https://www.tidyverse.org&gt;)&lt;/font&gt;" width="50%" />
+<p class="caption">(\#fig:tidyverse)dplyr와 ggplot2를 포함하는 tidyverse 패키지 <font size="2">(출처 <https://www.tidyverse.org>)</font></p>
 </div>
 
 아래의 소스코드에서는 선 (number line)상에 정수와 유리수를 표시하여 정수와 유리수들 간의 대소관계를 시각적으로 파악하기 위하여 ```ggplot```함수가 사용되었습니다.  ```+```연산자로 그래프 설정을 한 줄 한 줄 추가하는 형태이기 때문에 각 라인의 코드가 무슨 역활을 하는지 명확하지 않으면 특정 라인 까지만 실행하여 결과를 확인하면 도움이 됩니다. 예를 들어, 아래 ggplot()함수 부분 중 세줄 ```ggplot(…) + annotate(…) + annotate(…)```만 실행하면 RStudio의 Plots창에 파란선과 빨간선만 나타납니다. 다만 세 번째 줄 마지막 줄에 있는 ```+```는 빼고 실행하여야 합니다.
@@ -1038,7 +1036,7 @@ library(RColorBrewer)  #그래프 요소에 사용되는 색상표 (컬러 팔�
 ```
 
 ```r
-#2. 숫자 표현식 문자열 벡터, 숫자 벡터, 숫자 색상 벡터를 각 컬럼으로 하는 데이터 프레임 생성
+#2. 숫자 표현식 문자열 벡터, 숫자 벡터, 숫자 색상 벡터을 각 컬럼으로 하는 데이터 프레임 생성
 integerText <- c("-3", "-2", "-1", "0", "1", "2", "3")  #정수 표현식 문자열 벡터
 integerColor <- rep("dimgray", length(integerText))     #정수 색상 벡터        
 rationalNumberText <- c("-2.5", "-3/4", "1/4", "2.4")   #유리수 표현식 문자열 벡터
@@ -1080,8 +1078,8 @@ ggplot(number_df, aes(x=x, y=0)) +        #그래프에 사용할 데이터 프�
 1. ```|음수1| > |음수2|```이면 ```음수1 < 음수2```, 예: ```|-10| > |-3|```이면 ```-10 < -3```
 
 <div class="figure" style="text-align: center">
-<img src="images/0207_abs-40.png" alt="```ggplot()```함수를 이용하여 정수와 유리수의 절댓값을 원의 크기와 색상으로 표현" width="100%" />
-<p class="caption">(\#fig:abs-40)```ggplot()```함수를 이용하여 정수와 유리수의 절댓값을 원의 크기와 색상으로 표현</p>
+<img src="images/0207_abs-40.png" alt="```ggplot```을 이용하여 정수와 유리수의 절댓값 크기를 원의 크기와 색상으로 표현" width="100%" />
+<p class="caption">(\#fig:abs-40)```ggplot```을 이용하여 정수와 유리수의 절댓값 크기를 원의 크기와 색상으로 표현</p>
 </div>
 
 위의 그림을 생성하기 위하여 ```dplyr```패키지의 ```%>%``` 연산자와 ```ggplot2```패키지의 ```+```연산자가 동시에 사용되었습니다. 두 연산자 모두 한 줄 한 줄 함수를 추가해가며 세부적인 설정을 해나간다는 공통점이 있습니다. 아래의 소스코드에서는 각 함수의 입력값 세부 내용에는 신경 쓰지 말고 각 함수의 역활에만 파악해보도록 하세요. ```number_df``` 데이터 프레임에 ```mutate()```함수로 절댓값 컬럼을 추가로 생성해 줍니다. 그런 다음에, ```ggplot()```에 데이터 프레임과 컬럼을 입력값으로 넘겨주고, ```ylim()```함수로 그래프의 세로축 범위를 설정하고, ```geom_point()```로 각 유리수의 위치를 원형으로 그래프에 추가하고, ```geom_text()```함수로 유리수 숫자를 텍스트 형태로 그래프에 추가합니다. 마지막으로, ```scale_fill_distiller()```함수와 ```scale_size_continuous()```함수로 그래프에 표현된 원형 심볼의 크기와 색상을 설정합니다. 
@@ -1349,6 +1347,6 @@ cp
 
 이번 장에서는 자연수의 소인수분해, 최대공약수와 최소공배수 구하기, 정수와 유리수의 대소관계 및 절댓값, 정수와 유리수의 연산를 다루면서 벡터, 리스트, 데이터 프레임 등의  데이터 객체들을 알아보고, 반복문, 조건문, 연산자, 함수 등을 활용하여 원하는 로직을 구현하는 방법을 다루었습니다. 뿐만 아니라, 지도 형태, 그래프 형태, 트리 형태, 써글팩 형태 등의 다양한 시각화 방법^[R 그래프 갤러리 사이트 (<https://www.r-graph-gallery.com>)]을 살펴보았습니다.  
 
-이제 **3장 문자와 식**에 대하여 본격적으로 알아봅시다.
+이제 **\@ref(x-equation)장 문자와 식**에 대하여 본격적으로 알아봅시다. 
 
 
