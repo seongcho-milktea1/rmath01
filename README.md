@@ -1,6 +1,6 @@
 # 데이터과학: R로 배우는 중등수학 1
 
-'데이터과학: R로 배우는 중등수학 1 (<https://seongcho-milktea1.github.io/rmath01>)'의 repository 입니다.
+'데이터과학: R로 배우는 중등수학 1 (<https://seongcho1.github.io/rmath01>)'의 repository 입니다.
 
 # 이 책의 구성
 
