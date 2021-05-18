@@ -8,4 +8,5 @@ data/KOR_value/
 data/KOR_fs/
 data/dart
 temp/
+docs/*.md
 .DS_Store
